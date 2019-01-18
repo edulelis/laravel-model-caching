@@ -19,6 +19,6 @@ trait CachePrefixing
 
     protected function getDatabaseName() : string
     {
-        return $this->query->connection->getDatabaseName();
+        return (string) $this->query->connection->getDatabaseName();
     }
 }
